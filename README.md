@@ -1,6 +1,17 @@
 # MA3 Reference
 
-MA3 Reference searches the grandMA3 manual and release notes you import on your own computer. Search results link to their source topic or PDF page and identify the software version. [View screenshots](#screenshots)
+<a name="screenshots"></a>
+
+[![The Release Notes view in dark mode, showing the imported grandMA3 editions](screenshots/releases.png)](screenshots/releases.png)
+
+<p>
+  <a href="screenshots/commands.png"><img src="screenshots/commands.png" width="49%" alt="A command search for fade showing matching syntax and source versions"></a>
+  <a href="screenshots/topic.png"><img src="screenshots/topic.png" width="49%" alt="The SelectedSequence() Lua topic showing its description, arguments and source versions"></a>
+</p>
+
+The screenshots show 22 release-note editions, a command search for `fade`, and the `SelectedSequence()` Lua reference. [Source credits](NOTICE.md)
+
+MA3 Reference searches the grandMA3 manual and release notes you import on your own computer. Search results link to their source topic or PDF page and identify the software version.
 
 ## Get started
 
@@ -57,22 +68,6 @@ The Lua view uses the Lua reference topics from the imported manual. If you also
 | `.cache/catalog.sqlite` | Search database derived from the local records |
 
 These directories belong on your computer. Keep them out of Git and out of public builds, including caches, image archives and search indexes.
-
-## Screenshots
-
-These screenshots use an original example library about lighting a miniature paper skyline.
-
-**Search results** show a matching passage, its place in the library and the source version.
-
-![Five search results for “skyline” with the example library’s contents in the sidebar](screenshots/search.png)
-
-**Topic view** shows the cue sheet alongside its source details and links to sections on the page.
-
-![A topic with a three-cue table, source version and links to Run order and Rehearsal handoff](screenshots/topic.png)
-
-**Command examples** link each command to the topic it came from. This view shows the dark theme.
-
-![Four example commands for naming cues and a sequence, with links to their source topics](screenshots/commands.png)
 
 ## Copyright
 
