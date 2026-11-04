@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="A local, version-aware reference for grandMA3 commands, the user manual and release history.">
+    <title>MA3 Reference</title>
+    <link rel="stylesheet" href="/web/styles.css">
+    <script defer src="/web/command-links.js"></script>
+    <script defer src="/web/virtual-command-list.js"></script>
+    <script defer src="/web/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="topbar">
+      <button class="mobile-menu icon-button" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <a class="brand" href="/" aria-label="MA3 Docs home">MA3 Docs</a>
+      <nav class="top-nav" aria-label="Reference sections">
+        <button data-mode="manual" class="active">Manual</button>
+        <button data-mode="commands">Commands</button>
+        <button data-mode="lua">Lua</button>
+        <button data-mode="releases">Release Notes</button>
+        <button data-mode="bugs">Known Bugs</button>
+      </nav>
+      <div class="topbar-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode">Dark mode</button>
+      </div>
+    </header>
+    <div class="workspace">
+      <aside class="sidebar" id="sidebar" aria-label="Documentation navigation">
+        <div class="sr-only"><span id="sidebar-title">Contents</span><span id="nav-count"></span></div>
+        <button class="sidebar-home" id="overview-button"><span>⌂</span> Overview</button>
+        <div id="navigation" class="navigation"><p class="muted loading-line">Loading reference…</p></div>
+        <span class="sr-only" id="corpus-status">Loading</span>
+      </aside>
+      <div class="content-shell">
+        <section class="search-bar" aria-label="Search documentation">
+          <div class="search-field">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 5 5"></path></svg>
+            <input id="search" type="search" placeholder="Search documentation…" autocomplete="off" aria-label="Search reference">
+            <kbd id="search-shortcut">⌘ K</kbd>
+          </div>
+          <div class="search-filters" id="search-filters">
+            <label class="checkbox-label"><input type="checkbox" id="include-history"> Include release history</label>
+            <label class="sr-only" for="command-source">Command source</label><select id="command-source" hidden><option value="manual">Current manual</option><option value="release-note">Release notes only</option><option value="all">All sources</option></select>
+            <label class="sr-only" for="category">Category</label><select id="category"><option value="">All topics</option><option value="command">Commands</option><option value="option">Options</option><option value="lua">Lua API</option><option value="topic">Topics</option></select>
+            <label class="sr-only" for="version">Version</label><select id="version"><option value="">All versions</option></select>
+          </div>
+        </section>
+        <main id="main" tabindex="-1" aria-live="polite"></main>
+        <footer class="copyright-footer">
+          grandMA3 manuals, release notes and illustrations are © MA Lighting and their respective rights holders.
+          <a href="https://www.malighting.com/imprint/">Publisher’s copyright notice</a>
+        </footer>
+      </div>
+    </div>
+    <div id="toast" role="status" class="toast" hidden></div>
+  </body>
+</html>
