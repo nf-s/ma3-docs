@@ -4,6 +4,11 @@
 /app/*
 !/scripts/
 /scripts/*
+!/screenshots/
+/screenshots/*
+!/screenshots/search.png
+!/screenshots/topic.png
+!/screenshots/commands.png
 !/tests/
 /tests/*
 !/web/
